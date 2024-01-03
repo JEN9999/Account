@@ -1,8 +1,23 @@
-## create account
+### create account
 POST http://localhost:8080/account
 Content-Type: application/json
 
 {
   "userId": 1,
-  "initialBalance": 10000
+  "initialBalance": 1000
 }
+
+###delete account
+DELETE http://localhost:8080/account
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "10000001"
+
+}
+
+### get account
+GET http://localhost:8080/account?user_id=1
+Content-Type: application/json
+
