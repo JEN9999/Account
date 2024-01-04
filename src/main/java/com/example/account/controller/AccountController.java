@@ -15,6 +15,8 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
+
 @RestController
 @RequiredArgsConstructor
 public class AccountController {
@@ -64,4 +66,5 @@ public class AccountController {
             @PathVariable Long id){
         return accountService.getAccount(id);
     }
+
 }
